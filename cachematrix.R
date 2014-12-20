@@ -6,10 +6,25 @@
 #####################################
 ## My first function makeCacheMatrix:
 ## 1. Set and get Matrix
-## 2. Set and get Inverse of a Matrix
+## 2. Set and get Inverse of a Matrix 
 #####################################
 
 makeCacheMatrix <- function(x = matrix()) {
+    m <- NULL
+    ## Set the matrix
+    set <- function(y) {
+        x <<- y ## Store into cache
+        m <<- NULL ## Store into cache
+    }
+    ## Get the matrix 
+    get <- function() x
+    ## Set the inverse of a matrix in cache
+    setInverse <- function(Inverse) m <<- Inverse
+    ## Get the inverse of a matrix
+    getInverse <- function() m
+    list(set = set, get = get,
+         setInverse = setInverse,
+         getInverse = getInverse)
 
 }
 
