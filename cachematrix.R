@@ -1,7 +1,13 @@
-## Put comments here that give an overall description of what your
-## functions do
+#########################################
+##: Author: Pankaj "Michael" Agarwal
+##: Date written: 12/20/2014
+#######################################
 
-## Write a short comment describing this function
+#####################################
+## My first function makeCacheMatrix:
+## 1. Set and get Matrix
+## 2. Set and get Inverse of a Matrix
+#####################################
 
 makeCacheMatrix <- function(x = matrix()) {
 
